@@ -135,6 +135,7 @@ nav ul li a {
 /* Products Section */
 #products {
     padding: 50px;
+    font-size: 16px;
     background-color: #FFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -345,6 +346,7 @@ header h1 {
 
 /* Dropdown Menu Styling */
 .dropdown {
+    font-size: 20px;
     position: relative;
     display: inline-block;
     margin-right: auto;
@@ -361,6 +363,7 @@ header h1 {
 }
 
 .dropdown-content {
+    font-size: 20px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -417,5 +420,19 @@ header h1 {
 
     header h1 {
         font-size: 24px; /* Adjust font size for mobile */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Show 2 products per row */
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* Show 2 products per row on smaller mobile screens */
     }
 }
