@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAB Creations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FAB Creations</h1>
+        <nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="Cart" style="width: 30px; height: 30px;">
+                    <span id="cart-count">0</span> <!-- To display the number of items in the cart -->
+                </a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a> -->
+    </header>
+
+    <!-- Image Carousel -->
+    <section id="home">
+        <div class="carousel">
+            <img class="carousel-slide" src="images/MAIN.jpg" alt="Resin Art 1">
+            <img class="carousel-slide" src="images/MAIN2.jpg" alt="Resin Art 2">
+        </div>
+        <p>Handmade resin products, perfect for gifts or decor.</p>
+        <a href="#products" class="btn">Explore Products</a>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        
+        <!-- Product Filter -->
+        <label for="product-filter">Filter by Category:</label>
+        <select id="product-filter">
+            <option value="all">All</option>
+            <option value="mobile-stand">Mobile Stand</option>
+            <option value="dot-mandala">Dot Mandala Candle Holder</option>
+            <option value="candle-holder">Candle Holder</option>
+            <option value="jewellery-box">Jewellery Box</option>
+        </select>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-card" data-category="mobile-stand" data-price="500.00">
+                <img src="images/MH1.jpg" alt="Mobile Stand">
+                <h3>Mobile Stand</h3>
+                <p>Beautiful resin mobile stands.</p>
+                <p>Price: ₹500.00</p>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH1.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="mobile-stand" data-price="500.00">
+                <img src="images/MH2.jpg" alt="Mobile Stand">
+                <h3>Mobile Stand</h3>
+                <p>Beautiful resin mobile stands.</p>
+                <p>Price: ₹500.00</p>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH2.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="mobile-stand" data-price="500.00">
+                <img src="images/MH3.jpg" alt="Mobile Stand">
+                <h3>Mobile Stand</h3>
+                <p>Beautiful resin mobile stands.</p>
+                <p>Price: ₹500.00</p>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH3.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="mobile-stand" data-price="500.00">
+                <img src="images/MH4.jpg" alt="Mobile Stand">
+                <h3>Mobile Stand</h3>
+                <p>Beautiful resin mobile stands.</p>
+                <p>Price: ₹500.00</p>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH4.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala" data-price="600.00">
+                <img src="images/DMCH1.jpg" alt="Dot Mandala Candle Holder">
+                <h3>Dot Mandala Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH1.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala" data-price="500.00">
+                <img src="images/DMCH2.jpg" alt="Dot Mandala Candle Holder">
+                <h3>Dot Mandala Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH2.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala" data-price="600.00">
+                <img src="images/DMCH3.jpg" alt="Dot Mandala Candle Holder">
+                <h3>Dot Mandala Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH3.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="candle-holder" data-price="450.00">
+                <img src="images/CH0.jpg" alt="Resin Candle Holder">
+                <h3>Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Candle Holder" data-price="450.00" data-image="images/CH0.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="jewellery-box" data-price="500.00">
+                <img src="images/JB1.jpg" alt="Jewellery Box">
+                <h3>Jewellery Box</h3>
+                <p>Unique handmade resin Jewellery Box.</p>
+                <p>Price: ₹500.00</p>
+                <button class="add-to-cart" data-product="Jewellery Box" data-price="500.00" data-image="images/JB1.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At FAB Creations, we craft unique resin items with love and precision, including dot mandala art on candle holders.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us:</p>
+        <ul class="contact-details">
+            <li><strong>Name:</strong> Falgguni Bhatt</li>
+            <li><strong>Email:</strong> <a href="mailto:falggunibhatt@gmail.com">falggunibhatt@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+917506923464">+91 7506923464</a></li>
+        </ul>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Cart Section -->
+    <!-- <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total Price: ₹0.00</p>
+        <button id="checkout">Checkout</button>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2024 FAB Creations. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
