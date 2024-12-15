@@ -8,12 +8,37 @@
 </head>
 <body>
     <header>
+        <div class="header-content">
+            <!-- Left side: Logo as background -->
+            
+            <!-- Middle: Brand name and navigation menu -->
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+    
+            <!-- Right side: Cart icon -->
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <img src="images/cart.png" alt="Cart">
+                    <span id="cart-count">0</span> <!-- This will display the number of items in the cart -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- <header>
+        <img src="images/FAB.JPG" alt="Brand Logo" class="logo"> Add your logo here
         <h1>FAB Creations</h1>
         <nav>
             <div class="cart-icon">
                 <a href="cart.html">
                     <img src="images/cart.png" alt="Cart" style="width: 30px; height: 30px;">
-                    <span id="cart-count">0</span> <!-- To display the number of items in the cart -->
+                    <span id="cart-count">0</span> To display the number of items in the cart
                 </a>
             </div>
             <ul>
@@ -23,8 +48,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <!-- <a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a> -->
-    </header>
+        <a href="#cart" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </header> -->
 
     <!-- Image Carousel -->
     <section id="home">
@@ -32,7 +57,7 @@
             <img class="carousel-slide" src="images/MAIN.jpg" alt="Resin Art 1">
             <img class="carousel-slide" src="images/MAIN2.jpg" alt="Resin Art 2">
         </div>
-        <p>Handmade resin products, perfect for gifts or decor.</p>
+        <p>One stop destination for unique personalised art pieces!</p>
         <a href="#products" class="btn">Explore Products</a>
     </section>
 
@@ -44,76 +69,346 @@
         <select id="product-filter">
             <option value="all">All</option>
             <option value="mobile-stand">Mobile Stand</option>
-            <option value="dot-mandala">Dot Mandala Candle Holder</option>
-            <option value="candle-holder">Candle Holder</option>
+            <option value="dot-mandala-big">Dot Mandala Big Candle Holder</option>
+            <option value="dot-mandala-small">Dot Mandala Small Candle Holder</option>
+            <option value="resin-candle-holder">Resin Candle Holder</option>
             <option value="jewellery-box">Jewellery Box</option>
         </select>
 
         <!-- Product Grid -->
         <div class="product-grid">
             <div class="product-card" data-category="mobile-stand" data-price="500.00">
-                <img src="images/MH1.jpg" alt="Mobile Stand">
+                <img src="images/Phone-Stands/MH1.jpg" alt="Mobile Stand">
                 <h3>Mobile Stand</h3>
                 <p>Beautiful resin mobile stands.</p>
                 <p>Price: ₹500.00</p>
-                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH1.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/Phone-Stands/MH1.jpg">Add to Cart</button>
             </div>
             <div class="product-card" data-category="mobile-stand" data-price="500.00">
-                <img src="images/MH2.jpg" alt="Mobile Stand">
+                <img src="images/Phone-Stands/MH2.jpg" alt="Mobile Stand">
                 <h3>Mobile Stand</h3>
                 <p>Beautiful resin mobile stands.</p>
                 <p>Price: ₹500.00</p>
-                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH2.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/Phone-Stands/MH2.jpg">Add to Cart</button>
             </div>
             <div class="product-card" data-category="mobile-stand" data-price="500.00">
-                <img src="images/MH3.jpg" alt="Mobile Stand">
+                <img src="images/Phone-Stands/MH3.jpg" alt="Mobile Stand">
                 <h3>Mobile Stand</h3>
                 <p>Beautiful resin mobile stands.</p>
                 <p>Price: ₹500.00</p>
-                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH3.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/Phone-Stands/MH3.jpg">Add to Cart</button>
             </div>
             <div class="product-card" data-category="mobile-stand" data-price="500.00">
-                <img src="images/MH4.jpg" alt="Mobile Stand">
+                <img src="images/Phone-Stands/MH4.jpg" alt="Mobile Stand">
                 <h3>Mobile Stand</h3>
                 <p>Beautiful resin mobile stands.</p>
                 <p>Price: ₹500.00</p>
-                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/MH4.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Mobile Stand" data-price="500.00" data-image="images/Phone-Stands/MH4.jpg">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="dot-mandala" data-price="600.00">
-                <img src="images/DMCH1.jpg" alt="Dot Mandala Candle Holder">
-                <h3>Dot Mandala Candle Holder</h3>
-                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/1.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/1.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/2.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/2.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/3.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/3.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/4.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/4.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/5.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/5.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/6.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/6.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-big" data-price="1000.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Big/7.jpg" alt="Dot Mandala Big Candle Holder">
+                <h3>Dot Mandala Big Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Big Candle Holders.</p>
+                <p>Price: ₹1000.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Big Candle Holder" data-price="1000.00" data-image="images/Dot-Mandala-Candle-Holders-Big/7.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/DMCH1.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
                 <p>Price: ₹600.00</p>
-                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH1.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/DMCH1.jpg">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="dot-mandala" data-price="500.00">
-                <img src="images/DMCH2.jpg" alt="Dot Mandala Candle Holder">
-                <h3>Dot Mandala Candle Holder</h3>
-                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/DMCH2.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
                 <p>Price: ₹600.00</p>
-                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH2.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/DMCH2.jpg">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="dot-mandala" data-price="600.00">
-                <img src="images/DMCH3.jpg" alt="Dot Mandala Candle Holder">
-                <h3>Dot Mandala Candle Holder</h3>
-                <p>Unique handmade resin Dot Mandala Candle Holders.</p>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/DMCH3.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
                 <p>Price: ₹600.00</p>
-                <button class="add-to-cart" data-product="Dot Mandala Candle Holder" data-price="600.00" data-image="images/DMCH3.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/DMCH3.jpg">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="candle-holder" data-price="450.00">
-                <img src="images/CH0.jpg" alt="Resin Candle Holder">
-                <h3>Candle Holder</h3>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/1.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/1.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/2.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/2.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/3.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/3.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/4.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/4.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/5.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/5.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/6.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/6.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/7.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/7.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/8.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/8.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/9.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/9.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/10.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/10.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/11.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/11.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/12.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/12.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/13.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/13.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/14.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/14.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/15.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/15.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/16.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/16.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/17.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/17.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/18.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/18.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/19.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/19.jpg">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="dot-mandala-small" data-price="600.00">
+                <img src="images/Dot-Mandala-Candle-Holders-Small/20.jpg" alt="Dot Mandala Small Candle Holder">
+                <h3>Dot Mandala Small Candle Holder</h3>
+                <p>Unique handmade resin Dot Mandala Small Candle Holders.</p>
+                <p>Price: ₹600.00</p>
+                <button class="add-to-cart" data-product="Dot Mandala Small Candle Holder" data-price="600.00" data-image="images/Dot-Mandala-Candle-Holders-Small/20.jpg">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/CH0.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
                 <p>Unique handmade resin Candle Holders.</p>
                 <p>Price: ₹450.00</p>
-                <button class="add-to-cart" data-product="Candle Holder" data-price="450.00" data-image="images/CH0.jpg">Add to Cart</button>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/CH0.jpg">Add to Cart</button>
             </div>
-            <div class="product-card" data-category="jewellery-box" data-price="500.00">
-                <img src="images/JB1.jpg" alt="Jewellery Box">
-                <h3>Jewellery Box</h3>
-                <p>Unique handmade resin Jewellery Box.</p>
-                <p>Price: ₹500.00</p>
-                <button class="add-to-cart" data-product="Jewellery Box" data-price="500.00" data-image="images/JB1.jpg">Add to Cart</button>
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/1.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/1.jpg">Add to Cart</button>
             </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/2.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/2.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/3.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/3.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/4.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/4.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/5.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/5.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/6.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/6.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/7.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/7.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/8.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/8.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product-card" data-category="resin-candle-holder" data-price="450.00">
+                <img src="images/Resin-Candle-Holders/9.jpg" alt="Resin Candle Holders">
+                <h3>Resin Candle Holder</h3>
+                <p>Unique handmade resin Candle Holders.</p>
+                <p>Price: ₹450.00</p>
+                <button class="add-to-cart" data-product="Resin Candle Holders" data-price="450.00" data-image="images/Resin-Candle-Holders/9.jpg">Add to Cart</button>
+            </div>
+
+
         </div>
     </section>
 
