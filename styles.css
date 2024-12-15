@@ -433,6 +433,6 @@ header h1 {
 
 @media only screen and (max-width: 480px) {
     .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* Show 2 products per row on smaller mobile screens */
+        grid-template-columns: repeat(2, 1fr); /* Show 2 products per row on smaller mobile screens */
     }
 }
