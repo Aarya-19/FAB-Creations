@@ -433,12 +433,12 @@ header h1 {
 
 @media only screen and (max-width: 480px) {
     .product-card {
-        width: 176px; /* 20% smaller than 220px */
+        width: 160px; /* 20% smaller than 220px */
         padding: 16px; /* Reduced padding for smaller cards */
     }
 
     .product-grid {
         grid-template-columns: repeat(2, 1fr); /* Keep 2 products per row */
-        gap: 15px; /* Adjust the gap for smaller screens */
+        gap: 13px; /* Adjust the gap for smaller screens */
     }
 }
